@@ -1,0 +1,52 @@
+:host {
+  display: grid;
+  padding: 1rem;
+  gap: 1rem;
+}
+
+.capitalize {
+  text-transform: capitalize;
+}
+
+.monster-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 1rem;
+}
+
+.monster-item {
+  background: #eee;
+  border-radius: 4px;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  border: 1px solid #ddd;
+}
+
+.monster-item img {
+  image-rendering: -moz-crisp-edges;
+  image-rendering: pixelated;
+}
+
+.monster-item h2 {
+  margin: 0;
+}
+
+.monster-types {
+  display: grid;
+  grid-template-columns: max-content max-content;
+  gap: 0.5rem;
+  list-style-type: none;
+  padding: 0;
+}
+
+.monster-types > * {
+  background: #ddd;
+  padding: 0.25rem 1rem;
+  border-radius: 9999px;
+}
+
+.load-more {
+  justify-self: flex-start;
+  font-size: 2rem;
+}

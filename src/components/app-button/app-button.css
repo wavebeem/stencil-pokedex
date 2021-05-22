@@ -1,0 +1,24 @@
+:host {
+  display: flex;
+}
+
+.button {
+  background: var(--color-brand);
+  color: white;
+  font: inherit;
+  border: 0;
+  border-radius: 0.25rem;
+  padding: 0.25rem 0.5rem;
+  box-shadow: 0 2px 2px rgb(0 0 0 / 20%);
+}
+
+.button:disabled {
+  opacity: 0.25;
+  box-shadow: none;
+  pointer-events: none;
+}
+
+.button:focus,
+.button:hover {
+  background: var(--color-brand-hover);
+}
